@@ -1,0 +1,41 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square{
+    height: 5em;
+    width: 5em;
+    margin: 1.5em;    
+    rotate: 45deg;
+    animation: rotateLoop 2s;
+    animation-iteration-count: infinite;
+}
+
+.square1{
+    background-color: red;
+}
+
+.square2{
+    background-color: orange;
+}
+
+.square3{
+    background-color: blue;
+}
+
+@keyframes rotateLoop {
+    from{
+        rotate: 45deg;
+    }to{
+        rotate: 135deg
+    }
+}
