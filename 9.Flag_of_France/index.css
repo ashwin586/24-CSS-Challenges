@@ -1,0 +1,64 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+:root {
+    --red: #ED2938;
+    --white: #FFF;
+    --blue: #002495;
+    --flag-height: 300px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The Flexbox way */
+/* .flag-france{
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 3/2);
+    background-color: aliceblue;
+    display: flex;
+}
+
+.stripe{
+   flex-grow: 1;
+}
+
+.blue{
+    background-color: var(--blue);
+}
+.white{
+    background-color: var(--white);
+}
+.red{
+    background-color: var(--red);
+} */
+
+/* The Grid Way */
+.flag-france {
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 3/2);
+    background-color: aliceblue;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.white {
+    background-color: var(--white);
+}
+
+.red {
+    background-color: var(--red);
+}
