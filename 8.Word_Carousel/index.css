@@ -1,0 +1,43 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-word: #5134ff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1::after{
+    background-color: var(--bg-word);
+    border-radius: 5px;
+    padding: 10px;
+    content: "";
+    color: white;
+    animation: 5s carousel infinite;
+}
+
+@keyframes carousel {
+    0%{
+        content: "Coding";
+    }
+    25%{
+        content: "JavaScript";
+    }
+    50%{
+        content: "Parents";
+    }
+    75%{
+        content: "Video Games";
+    }
+    100%{
+        content: "Coding";
+    }
+}
