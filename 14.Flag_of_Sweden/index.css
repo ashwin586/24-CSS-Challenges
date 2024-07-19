@@ -1,0 +1,45 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #0269A6;
+    --yellow: #FECC00;
+    --flag-height: 300px;
+    --flag-width: calc(var(--flag-height) * 8/5)
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag-sweden {
+    height: var(--flag-height);
+    width: var(--flag-width);
+    background-color: var(--blue);
+    display: flex;
+    position: relative;
+}
+
+.stripe {
+    height: calc(var(--flag-height) * 1/5);
+    background-color: var(--yellow);
+}
+
+.stripe-yellow {
+    align-self: center;
+    width: 100%;
+}
+
+.stripe-yellow2 {
+    position: absolute;
+    width: var(--flag-height);
+    rotate: 90deg;
+    top: calc(var(--flag-height) * 4 / 10);
+    right: calc(var(--flag-width) * 5 / 16)
+}
