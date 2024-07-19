@@ -45,7 +45,6 @@ body {
 .flag-france {
     height: var(--flag-height);
     width: calc(var(--flag-height) * 3/2);
-    background-color: aliceblue;
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(3, 1fr);
