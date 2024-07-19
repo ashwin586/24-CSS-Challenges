@@ -1,0 +1,50 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+:root {
+    --orange: #E15307;
+    --white: #FFFFFF;
+    --green: #10AF2A;
+    --flag-height: 300px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag-niger {
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 7/6);
+    display: grid;
+    position: relative;
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.white {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.circle {
+    background-color: var(--orange);
+    height: calc(var(--flag-height) / 3 * .85);
+    width: calc(var(--flag-height) / 3 * .85);
+    border-radius: 50%;
+    position: absolute;
+}
