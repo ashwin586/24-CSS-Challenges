@@ -1,0 +1,42 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fff;
+    --red: #FF0002;
+    --flag-hw: 300px
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag-swiss {
+    height: var(--flag-hw);
+    width: var(--flag-hw);
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cross1 {
+    background-color: white;
+    height: calc(var(--flag-hw) * 3/16);
+    width: calc(var(--flag-hw) * 5/8);
+    background-color: var(--white);
+}
+
+.cross2 {
+    background-color: white;
+    height: calc(var(--flag-hw) * 5/8);
+    width: calc(var(--flag-hw) * 3/16);
+    background-color: var(--white);
+    position: absolute;
+}
