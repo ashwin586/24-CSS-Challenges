@@ -1,0 +1,48 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background: #ced0e2;
+}
+
+:root {
+    --toggle-switch-bg: #232428;
+    --toggle-border: #232428;
+    --toggle-bg: #fff;
+}
+
+.toggle-wrap {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    border: 4px solid var(--toggle-border);
+    background-color: var(--toggle-bg);
+}
+
+input {
+    display: none;
+}
+
+.toggle-switch {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--toggle-switch-bg);
+    margin: .3em;
+    transition: transform .5s ease-in;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+input:checked~.toggle-switch {
+    transform: translateX(calc(200px - 80px));
+}
