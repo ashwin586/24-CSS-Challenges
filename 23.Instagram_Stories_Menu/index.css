@@ -1,0 +1,80 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-main);
+    color: var(--font-color);
+    font-family: var(--font);
+}
+
+li {
+    list-style-type: none;
+}
+
+:root {
+    --font: 'Karla', sans-serif;
+    --font-color: #fff;
+    --grad1: #feda75;
+    --grad2: #fa7e1e;
+    --grad3: #d62976;
+    --grad4: #962fbf;
+    --grad5: #4f5bd5;
+    --viewed: gray;
+    --bg-main: #000;
+    --bg-live: red;
+}
+
+.stories-menu {
+    max-width: 320px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.img-wrapper {
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.img {
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.viewed > .img-wrapper {
+    background: var(--viewed);
+}
+
+.new > .img-wrapper{
+    background: linear-gradient(180deg, var(--grad5), var(--grad4), var(--grad3), var(--grad2), var(--grad1));
+}
+
+.live::after {
+    content: 'LIVE';
+    background-color: var(--bg-live);
+    font-size: .5em;
+    font-weight: bold;
+    border: 2px solid black;
+    width: 20%;
+    padding: 2px 4px;
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
